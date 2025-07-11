@@ -6,10 +6,18 @@
     <title>Ashu Kumar Jha | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Vanta.js Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 </head>
 <body>
-    <!-- <div class="cursor"></div> -->
+    <!-- Background container for Vanta -->
+    <div id="vanta-background"></div>
     
+    <!-- Smooth cursor elements -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
     <header class="hero">
         <nav class="main-nav">
             <div class="nav-left">
@@ -17,8 +25,7 @@
             </div>
             <div class="nav-right">
                 <a href="#about">About</a>
-                <!-- <a href="projects.html">Projects</a> -->
-                <a href="#projects">Projects</a> <!-- Updated to section link -->
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
                 <button id="dark-mode-toggle" aria-label="Toggle dark mode">
                     <img src="assets/icons/moon.svg" alt="Dark mode">
@@ -27,11 +34,10 @@
         </nav>
         
         <div class="hero-content">
-            <h1 class="title" data-aos="fade-up">Ashu Kumar Jha</h1>
-            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">CS & Applied Mathematics @ IIIT Delhi</p>
-            <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
-                <!-- <a href="projects.html" class="btn primary">View Projects</a> -->
-                <a href="ASHU_KUMAR_JHA... (2).pdf" class="btn primary" target="_blank">View Resume</a> <!-- Updated to section link -->
+            <h1 class="title">Ashu Kumar Jha</h1>
+            <p class="subtitle">CS & Applied Mathematics @ IIIT Delhi</p>
+            <div class="hero-btns">
+                <a href="RESUME_ASHU_KUMAR_JHA.pdf" class="btn primary" target="_blank">View Resume</a>
                 <a href="#contact" class="btn secondary">Contact Me</a>
             </div>
         </div>
@@ -41,8 +47,25 @@
             <div class="line"></div>
         </div>
     </header>
+
+    <!-- Social media links on the right - Floating icons -->
+    <div class="social-links-vertical">
+        <a href="https://github.com/ashukumarjha108" class="social-icon" data-tooltip="GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashukumarjha" class="social-icon" data-tooltip="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/freakinnashu" class="social-icon" data-tooltip="Instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:ashu22115@iiitd.ac.in" class="social-icon" data-tooltip="Email" target="_blank">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
     <section id="about" class="section">
-        <div class="container">
+        <div class="glass-card">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
@@ -70,7 +93,7 @@
                             <div class="info-content">
                                 <ul>
                                     <li>Indian politics</li>
-                                    <li>reading history</li>
+                                    <li>Anime</li>
                                     <li>online chess</li>
                                 </ul>
                             </div>
@@ -85,10 +108,8 @@
         </div>
     </section>
  
-    
-    <!-- Add this after About section and before Projects -->
     <section id="skills" class="section">
-        <div class="container">
+        <div class="glass-card">
             <h2 class="section-title" data-aos="fade-up">My Skills</h2>
             <div class="skills-grid">
                 <!-- Web Development -->
@@ -101,40 +122,38 @@
                         <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
                         <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
                         <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
-                        <!-- <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span> -->
                         <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-                        <!-- <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span> -->
-                        <!-- <span class="skill-tag"><i class="fas fa-bolt"></i> Vite</span> -->
-                        <span class="skill-tag"><i class="fab fa-figma"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fab fa-python"></i> Django</span>
+                        <span class="skill-tag"><i class="fab fa-python"></i> Flask</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i> Next.js</span>
                     </div>
                 </div>
 
-                <!-- Others (including ML) -->
+                <!-- Others -->
                 <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
                     <h3><i class="fas fa-cogs"></i> Others</h3>
                     <div class="skills-tags">
                         <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                        <!-- <span class="skill-tag"><i class="fas fa-brain"></i> TensorFlow</span> -->
-                        <!-- <span class="skill-tag"><i class="fas fa-robot"></i> PyTorch</span> -->
-                        <!-- <span class="skill-tag"><i class="fas fa-chart-line"></i> Pandas</span> -->
                         <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
                         <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
-                        <!-- <span class="skill-tag"><i class="fas fa-fire"></i> Firebase</span> -->
+                        <span class="skill-tag"><i class="fas fa-code"></i> C</span>
+                        <span class="skill-tag"><i class="fab fa-haskell"></i> Haskell</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> JavaFX</span>
                         <span class="skill-tag"><i class="fab fa-figma"></i> Figma</span>
-                        <!-- <span class="skill-tag"><i class="fas fa-terminal"></i> CLI</span> -->
-                        <span class="skill-tag"><i class="fab fa-figma"></i> Miro</span>
-                        <span class="skill-tag"><i class="fab fa-figma"></i> Haskell</span>
-                        <span class="skill-tag"><i class="fab fa-figma"></i> JavaFX</span>
-                        <span class="skill-tag"><i class="fab fa-figma"></i> Canva</span>
-
-
+                        <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fab fa-google"></i> Google Colab</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <section id="projects" class="section">
-        <div class="container">
+        <div class="glass-card">
             <h2 class="section-title" data-aos="fade-up">Tech Projects</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
@@ -177,7 +196,7 @@
                     </div>
                 </div>
 
-                <!-- Inside your projects section, add this new project card -->
+                <!-- Project 3 -->
                 <div class="project-card" data-aos="fade-up">
                     <div class="project-image">
                         <img src="./bigstep_customfit.png" alt="BigStep CustomFit">
@@ -196,33 +215,12 @@
                         </div>
                     </div>
                 </div>
-    
-                <!-- Add more projects following the same structure -->
-                <!-- Project 3 -->
-                <!-- <div class="project-card" data-aos="fade-up">
-                    <div class="project-image">
-                        <img src="./project3.png" alt="Project 3">
-                        <div class="project-links">
-                            <a href="YOUR_GITHUB_LINK" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Project description</p>
-                        <div class="project-tags">
-                            <span>Technology 1</span>
-                            <span>Technology 2</span>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
-        <div class="container">
+        <div class="glass-card">
             <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info" data-aos="fade-right">
@@ -234,13 +232,13 @@
                         </a>
                         <div class="social-links">
                             <a href="https://github.com/ashukumarjha108" target="_blank">
-                                <img src="./github.png" alt="GitHub">
+                                <i class="fab fa-github"></i>
                             </a>
                             <a href="https://www.instagram.com/freakinnashu" target="_blank">
-                                <img src="./instagram.png" alt="Instagram">
+                                <i class="fab fa-instagram"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/ashukumarjha" target="_blank">
-                                <img src="./message.png" alt="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
                             </a>
                         </div>
                     </div>
@@ -262,18 +260,56 @@
         </div>
     </section>
 
-    <!-- <footer>
-        <div class="container">
-            <p>&copy; 2023 Ashu Kumar Jha. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </footer> -->
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        // Initialize Vanta.js background
+        document.addEventListener('DOMContentLoaded', () => {
+            VANTA.NET({
+                el: "#vanta-background",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x6c63ff,
+                backgroundColor: 0x121212,
+                points: 12.00,
+                maxDistance: 22.00,
+                spacing: 18.00
+            });
+
+            // Custom cursor effect
+            const cursorOuter = document.querySelector('.cursor-outer');
+            const cursorInner = document.querySelector('.cursor-inner');
+            const links = document.querySelectorAll('a, button, .project-card');
+
+            document.addEventListener('mousemove', (e) => {
+                cursorOuter.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+                cursorInner.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+            });
+
+            links.forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    cursorInner.classList.add('cursor-hover');
+                    cursorOuter.classList.add('cursor-hover');
+                });
+                link.addEventListener('mouseleave', () => {
+                    cursorInner.classList.remove('cursor-hover');
+                    cursorOuter.classList.remove('cursor-hover');
+                });
+            });
+
+            // Initialize AOS animation library
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
 </body>
 </html>
