@@ -65,7 +65,7 @@
     </div>
 
     <section id="about" class="section">
-        <div class="glass-card">
+        <div class="section-container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
@@ -109,11 +109,11 @@
     </section>
  
     <section id="skills" class="section">
-        <div class="glass-card">
-            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+        <div class="section-container">
+            <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
                 <!-- Web Development -->
-                <div class="skills-category" data-aos="fade-up">
+                <div class="skills-category">
                     <h3><i class="fas fa-code"></i> Web Development</h3>
                     <div class="skills-tags">
                         <span class="skill-tag"><i class="fab fa-react"></i> React</span>
@@ -131,7 +131,7 @@
                 </div>
 
                 <!-- Others -->
-                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="skills-category">
                     <h3><i class="fas fa-cogs"></i> Others</h3>
                     <div class="skills-tags">
                         <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
@@ -147,17 +147,91 @@
                         <span class="skill-tag"><i class="fab fa-google"></i> Google Colab</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <div class="glass-card">
-            <h2 class="section-title" data-aos="fade-up">Tech Projects</h2>
+        <div class="section-container">
+            <h2 class="section-title">Tech Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-aos="fade-up">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./shop.png" alt="ShopEase">
+                        <div class="project-links">
+                            <a href="https://github.com/ashukumarjha108/stackify.git" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ShopEase</h3>
+                        <p>Full stack e-commerce app</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./django.png" alt="DjangChat">
+                        <div class="project-links">
+                            <a href="https://github.com/ashukumarjha108/djangchat.git" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DjangChat</h3>
+                        <p>Real time chat application</p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>Node</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./next.png" alt="YC_Directory">
+                        <div class="project-links">
+                            <a href="https://github.com/ashukumarjha108/yc_directory.git" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>YC_Directory</h3>
+                        <p>Startup pitching platform</p>
+                        <div class="project-tags">
+                            <span>Next</span>
+                            <span>Sanity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./weather.png" alt="Weatherly">
+                        <div class="project-links">
+                            <a href="https://github.com/ashukumarjha108/weatherlyyy.git" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weatherly</h3>
+                        <p>Live weather app</p>
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Room DB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <div class="project-image">
                         <img src="./stick_hero.png" alt="Stick Hero">
                         <div class="project-links">
@@ -175,29 +249,8 @@
                         </div>
                     </div>
                 </div>
-    
-                <!-- Project 2 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-image">
-                        <img src="./batman.jpg" alt="Portfolio Website">
-                        <div class="project-links">
-                            <a href="https://github.com/ashukumarjha108/portfolio2" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>Personal portfolio with modern design</p>
-                        <div class="project-tags">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="fade-up">
+                <div class="project-card">
                     <div class="project-image">
                         <img src="./bigstep_customfit.png" alt="BigStep CustomFit">
                         <div class="project-links">
@@ -220,10 +273,10 @@
     </section>
 
     <section id="contact" class="section">
-        <div class="glass-card">
-            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
+                <div class="contact-info">
                     <h3>Let's Connect</h3>
                     <p>Feel free to reach out for collaborations or just to say hello!</p>
                     <div class="contact-methods">
@@ -243,7 +296,7 @@
                         </div>
                     </div>
                 </div>
-                <form id="contactForm" class="contact-form" data-aos="fade-left" action="https://formspree.io/f/xdkelqwb" method="POST">
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/xdkelqwb" method="POST">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -308,6 +361,42 @@
                 duration: 800,
                 easing: 'ease-in-out',
                 once: true
+            });
+
+            // Scroll animation implementation
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections
+            document.querySelectorAll('.section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Stagger animation for project cards
+            const projectObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, 150 * index);
+                        projectObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.project-card').forEach(card => {
+                projectObserver.observe(card);
             });
         });
     </script>
